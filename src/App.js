@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home'
+import SignUp from './components/SignUp';
+import ConfirmUser from'./components/ConfirmUser'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import awsmobile from './aws-exports';
+import Amplify from '@aws-amplify/core';
+import SignInPage from './components/SignInPage';
 
+Amplify.configure(awsmobile)
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Router>
+  <Switch>
+  <Route exact path='/Home'>
+  <Home />
+  </Route>
+  <Route path='/SignUp'>
+  <SignUp />
+  </Route>
+  <Route path ='/SignInPage'>
+  <SignInPage/>
+  </Route>
+  <Route path='/ConfirmUser'>
+  <ConfirmUser/>
+  </Route>
+  
+  </Switch>
+  </Router>
 }
 
 export default App;

@@ -1,0 +1,26 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-practicenotesapp-dev-150649-authRole",
+            "UnauthRoleArn": "arn:aws:iam::903009021500:role/amplify-practicenotesapp-dev-150649-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::903009021500:role/amplify-practicenotesapp-dev-150649-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-practicenotesapp-dev-150649-deployment",
+            "UnauthRoleName": "amplify-practicenotesapp-dev-150649-unauthRole",
+            "StackName": "amplify-practicenotesapp-dev-150649",
+            "StackId": "arn:aws:cloudformation:us-east-1:903009021500:stack/amplify-practicenotesapp-dev-150649/eefa6c80-420d-11ec-9ff3-0a8bbda23b13",
+            "AmplifyAppId": "d2rbva67i789tm"
+        },
+        "categories": {
+            "auth": {
+                "practicenotesappa89d2b92": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d2rbva67i789tm",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}
